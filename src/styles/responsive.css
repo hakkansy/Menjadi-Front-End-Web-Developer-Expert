@@ -1,0 +1,130 @@
+
+@media screen and (max-width: 600px) {
+    .header_nav {
+        z-index: 10;
+        background-color: #fb114b;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease-in-out;
+    }
+    .header_logo {
+        width: 50%;
+        z-index: 99;
+        position: relative;
+        margin-right: 90px;
+    }
+    .open {
+        transform: translate(0, 0);
+    }
+    .menu_toggle{
+        min-width: 44px;
+        min-height: 44px;
+    }
+    .nav_item,
+    .nav_item a{
+        display: block;
+    }
+    .nav_item {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    .nav_item a {
+        font-size: 28px;
+    }
+    .hero{
+        top:-2px;
+    }
+    .review-header {
+        flex-direction: column;
+    }
+    .review-name {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .review-date {
+        text-align: left;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+    .header_logo {
+        width: 30%;
+      }
+    
+    .menu_toggle {
+        display: none;
+    }
+
+    .list-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+    .list-item__title {
+        font-size: 18px;
+    }
+    .list-item__description {
+        font-size: 14px;
+    }
+    .restaurant-review {
+        padding: 10px 20px;
+    }  
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+}
+
+@media screen and (min-width: 700px) {
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .restaurant-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .lists {
+        display: grid;
+    }
+    .restaurant-menu {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .nav_list {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .restaurant-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
